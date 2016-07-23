@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./mdl/material.min.css">
+    <script src="./mdl/material.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="utf-8">
+    <title>Holdet</title>
+  </head>
+  <body ng-app='app'>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" ng-controller="TabController as tab">
+      <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+          <div class="mdl-layout__header-row portfolio-logo-row">
+              <span class="mdl-layout__title">
+                  <a href='./'><div class="portfolio-logo"></div><a>
+                  <span class="mdl-layout__title"></span>
+              </span>
+          </div>
+          <div class="mdl-layout__header-row portfolio-navigation-row ">
+              <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                  <a class="mdl-navigation__link" ng-class="{ active:tab.isSet(1) }" href ng-click="tab.setTab(1)">Players</a>
+                  <!-- <a class="mdl-navigation__link" ng-class="{ active:tab.isSet(2) }" href ng-click="tab.setTab(2)">Games</a> -->
+                  <a class="mdl-navigation__link" ng-class="{ active:tab.isSet(3) }" href ng-click="tab.setTab(3)">Stats</a>
+                  <a class="mdl-navigation__link" ng-class="{ active:tab.isSet(4) }" href ng-click="tab.setTab(4)">Fines</a>
+              </nav>
+          </div>
+      </header>
+
+
+    <main class="mdl-layout__content">
+
+        <!-- Player section -->
+        <section class="mdl-grid portfolio-max-width" ng-controller='adminTeamController as team' ng-show='tab.isSet(1)' >
+            <div class="mdl-cell mdl-card mdl-shadow--4dp mdl-cell--1-offset mdl-cell--6-col">
+                <div class="mdl-card__media">
+                    <input type="file" name="file" style='display:none;'/>
+                </div>
+                <div class="mdl-card__title">
+                  <div class="mdl-textfield mdl-js-textfield" style="width:20%;">
+                    <input ng-model="team.newPlayer.number" class="mdl-textfield__input" type="number" pattern="\d*">
+                    <label class="mdl-textfield__label">Number</label>
+                  </div>
+
+                  <div class="mdl-textfield mdl-js-textfield" style="width:80%;">
+                    <input ng-model="team.newPlayer.name" class="mdl-textfield__input"type="text">
+                    <label class="mdl-textfield__label">Name</label>
+                  </div>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <select ng-model="team.newPlayer.position" ng-options="position as position for position in team.positions" style='width:100%'>
+                    <option value="">-- Select Position<option>
+                  </select>
+                </div>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit" ng-click='team.add()'>
+                  Submit
+                </button>
+            </div>
+
+            <form id='pictureUploader'class="mdl-cell mdl-card mdl-shadow--4dp mdl-cell--1-offset mdl-cell--6-col" enctype="multipart/form-data" method="POST" action="./players/image" >
+                <select name='picturePlayer' ng-model='player' ng-options="player.name as player.name for player in team.players" style="margin: 20px 0;">
+                  <option value="">-- Select Player<option>
+                </select>
+                <input type="file" name="playerPicture"/>
+
+                <input id='pictureSubmit' class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit"/>
+            </form>
+
+        </section>
+
+        <section class="mdl-grid portfolio-max-width" ng-show='tab.isSet(3)' >
+          <div class="mdl-cell mdl-cell--6-col mdl-shadow--4dp" ng-controller='GameStatsController as gameStats' style="text-align:center;">
+              <select ng-model="selectedPlayer" ng-options="player as player.name for player in gameStats.players" style='width:80%;margin: 25px 0;'>
+                <option value="">-- Select Player<option>
+              </select>
+              <div class="mdl-textfield mdl-js-textfield" style="width:80%;text-align:left;">
+                Games:
+                <input ng-model="selectedPlayer.games" class="mdl-textfield__input" type="number" pattern="\d*">
+              </div>
+              <div class="mdl-textfield mdl-js-textfield" style="width:80%;text-align:left;">
+                Goals:
+                <input ng-model="selectedPlayer.goals" class="mdl-textfield__input" type="number" pattern="\d*">
+              </div>
+              <div class="mdl-textfield mdl-js-textfield" style="width:80%;text-align:left;">
+                Assists:
+                <input ng-model="selectedPlayer.assists" class="mdl-textfield__input" type="number" pattern="\d*">
+              </div>
+              <div class="mdl-textfield mdl-js-textfield" style="width:80%;text-align:left;">
+                Yellows:
+                <input ng-model="selectedPlayer.yellows" class="mdl-textfield__input" type="number" pattern="\d*">
+              </div>
+              <div class="mdl-textfield mdl-js-textfield" style="width:80%;text-align:left;">
+                Reds:
+                <input ng-model="selectedPlayer.reds" class="mdl-textfield__input" type="number" pattern="\d*">
+              </div>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="width:100%;"type="submit" ng-click='gameStats.update(selectedPlayer)'>
+                Submit
+              </button>
+          </div>
+
+        </section>
+
+        <!-- Fine section -->
+        <section class="mdl-grid portfolio-max-width" ng-show='tab.isSet(4)' ng-controller='playerfinesController as playerfines'>
+          <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp" >
+            <h1>Pay</h1>
+            <select ng-model="selectedPlayer" ng-options='playerfines as playerfines.player for playerfines in playerfines.playerfinesList'>
+              <option value="">-- Select Player<option>
+            </select>
+
+            <div class="mdl-textfield mdl-js-textfield" style="width:100%;">
+              <input ng-model="payAmout" class="mdl-textfield__input" type="number" pattern="\d*">
+              <label class="mdl-textfield__label">Fine amout...</label>
+            </div>
+            <br/>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit" ng-click='playerfines.pay(selectedPlayer,payAmout)'>
+              Submit
+            </button>
+
+          </div>
+          <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp" ng-controller='playerfinesController as playerfines'>
+            <h1>Charge</h1>
+            <select ng-model="selectedPlayer" ng-options='playerfines as playerfines.player for playerfines in playerfines.playerfinesList'>
+              <option value="">-- Select Player<option>
+            </select>
+            <select ng-model="selectedFine" ng-options='fine as fine.desc for fine in playerfines.fineList'>
+              <option value="">-- Select Fine<option>
+            </select>
+            <div class="mdl-textfield mdl-js-textfield" style="width:100%;height:45px">
+            </div>
+            <br/>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" type="submit" ng-click='playerfines.charge(selectedPlayer,selectedFine)'>
+              Submit
+            </button>
+
+          </div>
+
+          <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp" ng-controller='finesController as fines'>
+            <h1>Add Fine</h1>
+            <div class="mdl-textfield mdl-js-textfield" style="width:100%;">
+              <input ng-model="fines.newFine.desc" class="mdl-textfield__input" type="text">
+              <label class="mdl-textfield__label">Description</label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield" style="width:100%;">
+              <input ng-model="fines.newFine.price" class="mdl-textfield__input" type="number" pattern="\d*">
+              <label class="mdl-textfield__label">Fine amout...</label>
+            </div>
+
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit" ng-click='fines.add()'>
+              Submit
+            </button>
+
+          </div>
+        </section>
+
+        <the-footer></the-footer>
+    </main>
+  </div>
+  </body>
+  <script src='./angular.min.js'></script>
+  <script src='./controllers/app.js'></script>
+  <script src='./jquery.min.js'></script>
+</html>

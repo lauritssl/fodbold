@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./mdl/material.min.css">
+    <script src="./mdl/material.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="utf-8">
+    <title>Holdet</title>
+  </head>
+  <body ng-app='app'>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" ng-controller="TabController as tab">
+      <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+          <div class="mdl-layout__header-row portfolio-logo-row">
+              <span class="mdl-layout__title">
+                  <a id='adminLink' href='./admin.html'><div class="portfolio-logo"></div><a>
+                  <span class="mdl-layout__title"></span>
+              </span>
+          </div>
+          <div class="mdl-layout__header-row portfolio-navigation-row ">
+              <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                  <a class="mdl-navigation__link" ng-class="{ active:tab.isSet(1) }" href ng-click="tab.setTab(1)">Players</a>
+                  <a class="mdl-navigation__link" ng-class="{ active:tab.isSet(2) }" href ng-click="tab.setTab(2)">Games</a>
+                  <a class="mdl-navigation__link" ng-class="{ active:tab.isSet(3) }" href ng-click="tab.setTab(3)">Stats</a>
+                  <a class="mdl-navigation__link" ng-class="{ active:tab.isSet(4) }" href ng-click="tab.setTab(4)">Fines</a>
+              </nav>
+          </div>
+      </header>
+
+
+    <main class="mdl-layout__content">
+
+        <!-- Player section -->
+        <section class="mdl-grid portfolio-max-width" ng-controller='teamController as team' ng-show='tab.isSet(1)' >
+            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card" ng-repeat="player in team.players | orderBy:'number'">
+                <div class="mdl-card__media" style="">
+                    <img class="article-image" ng-src="images/players/{{player.image}}" border="0" alt="">
+                </div>
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">#{{player.number}}: {{player.name}}</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  {{player.position}}
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Game section -->
+        <section class="mdl-grid portfolio-max-width" ng-show='tab.isSet(2)'>
+          <div class="mdl-cell mdl-cell--12-col mdl-shadow--4dp" style="min-height:50px;text-align:center;margin: 15px auto;max-width: 620px;">
+            <a href="http://www.dbu.dk/turneringer_og_resultater/resultatsoegning/position.aspx?poolid=235865">
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="margin:10px 10px;">
+                Stilling
+              </button>
+            </a>
+            <a href="http://www.dbu.dk/turneringer_og_resultater/resultatsoegning/programTeam.aspx?teamid=328052&poolid=235865">
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                Turneringsplan
+              </button>
+            </a>
+          </div>
+          <!-- <div class="mdl-cell mdl-cell--12-col mdl-shadow--4dp" style="overflow: hidden; margin: 15px auto; max-width: 620px;">
+          <iframe scrolling="no" src="http://www.dbu.dk/turneringer_og_resultater/resultatsoegning/position.aspx?poolid=235865" style="border: 0px none; margin-left: -20px; height: 840px; margin-top: -500px; width: 700px;">
+          </iframe>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col mdl-shadow--4dp" style="overflow: hidden; margin: 15px auto; max-width: 620px;">
+          <iframe scrolling="no" src="http://www.dbu.dk/turneringer_og_resultater/resultatsoegning/programTeam.aspx?teamid=328052&poolid=235865" style="border: 0px none; margin-left: -20px; height: 1130px; margin-top: -620px; width: 700px;">
+          </iframe>
+          </div> -->
+        </section>
+
+        <!-- Stats section -->
+        <section class="mdl-grid portfolio-max-width" ng-controller='GameStatsController as gameStats' ng-show='tab.isSet(3)'>
+          <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+            <thead>
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric" ng-click="gameStats.sortType = 'name'; gameStats.sortReverse = !gameStats.sortReverse">Player</th>
+                <th ng-click="gameStats.sortType = 'games'; gameStats.sortReverse = !gameStats.sortReverse">Games</th>
+                <th ng-click="gameStats.sortType = 'goals'; gameStats.sortReverse = !gameStats.sortReverse">Goals</th>
+                <th ng-click="gameStats.sortType = 'assists'; gameStats.sortReverse = !gameStats.sortReverse">Assists</th>
+                <th ng-click="gameStats.sortType = 'yellows'; gameStats.sortReverse = !gameStats.sortReverse">Yellows</th>
+                <th ng-click="gameStats.sortType = 'reds'; gameStats.sortReverse = !gameStats.sortReverse">Reds</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="player in gameStats.players | orderBy:gameStats.sortType:gameStats.sortReverse">
+                <td class="mdl-data-table__cell--non-numeric" >{{player.name}}</td>
+                <td>{{player.games}}</td>
+                <td>{{player.goals}}</td>
+                <td>{{player.assists}}</td>
+                <td>{{player.yellows}}</td>
+                <td>{{player.reds}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Fine section -->
+        <section class="mdl-grid portfolio-max-width" ng-show='tab.isSet(4)'>
+          <div class="mdl-cell mdl-cell--7-col mdl-card mdl-shadow--4dp" ng-controller='playerfinesController as playerfines'>
+            <h1>{{playerfines.title}}<p>-updated: {{playerfines.updated | date:"dd. MMM HH:mm:ss"}}</p></h1>
+            <table class="mdl-data-table mdl-js-data-table" >
+              <thead>
+                <tr>
+                  <th class="mdl-data-table__cell--non-numeric">Name</th>
+                  <th>Payed</th>
+                  <th>Owe</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="playerfine in playerfines.playerfinesList | orderBy:'player'">
+                  <td class="mdl-data-table__cell--non-numeric">{{playerfine.player}}</td>
+                  <td>{{playerfine.payed }}</td>
+                  <td>{{playerfine.owe}}</td>
+                </tr>
+
+                <tr id="playerfinesTotal">
+                  <td class="mdl-data-table__cell--non-numeric"><b>Total</b></td>
+                  <td>{{playerfines.payedTotal}}</td>
+                  <td>{{playerfines.oweTotal - playerfines.payedTotal}}</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+            <div class="mdl-cell mdl-cell--5-col mdl-card mdl-shadow--4dp" ng-controller='finesController as fines'>
+              <h1>{{fines.title}}</h1>
+              <table class="mdl-data-table mdl-js-data-table">
+                <thead>
+                  <tr>
+                    <th class="mdl-data-table__cell--non-numeric">Name</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat='fine in fines.fineList'>
+                    <td class="mdl-data-table__cell--non-numeric">{{fine.desc}}</td>
+                    <td>{{fine.price}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+        </section>
+
+        <the-footer></the-footer>
+    </main>
+  </div>
+  </body>
+  <script src='./angular.min.js'></script>
+  <script src='./controllers/app.js'></script>
+  <script src='./jquery.min.js'></script>
+  <script type="text/javascript">
+    $('#adminLink').click(function(e){
+      e.preventDefault();
+      var code = prompt("Vil du videre til admin siden ?", "Tryk koden..");
+      if(code == '2adminnu'){
+        window.location = './fsWpHe9WDxgcUXYGiZ48.html';
+      }
+    });
+  </script>
+</html>
