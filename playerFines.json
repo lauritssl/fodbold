@@ -1,0 +1,1062 @@
+/* 1 */
+{
+    "_id" : ObjectId("57f78a3afe26750010a7ed7a"),
+    "player" : "Safa Omar",
+    "payed" : 0,
+    "fines" : [],
+    "updated" : 1475840570718
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5793917bfe26750010a7ed67"),
+    "player" : "Kasper Dornonville Jørgensen",
+    "payed" : 255,
+    "fines" : [ 
+        {
+            "desc" : "Forsinket",
+            "price" : 20,
+            "commited" : NumberLong(1470246866658)
+        }, 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : NumberLong(1470911040917)
+        }, 
+        {
+            "desc" : "Glemt dunk (kamp)",
+            "price" : 10,
+            "commited" : NumberLong(1475929489769)
+        }, 
+        {
+            "desc" : "Glemt træningstrøje",
+            "price" : 25,
+            "commited" : 1477580952635
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848709020
+        }
+    ],
+    "updated" : 1477857067774
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5790e1a3fe26750010a7ed2e"),
+    "player" : "Marcus Mario Kurszewska",
+    "payed" : 245,
+    "fines" : [ 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : NumberLong(1470911026422)
+        }, 
+        {
+            "desc" : "Gult",
+            "price" : 25,
+            "commited" : NumberLong(1474011325651)
+        }, 
+        {
+            "desc" : "Mistet matrialer",
+            "price" : 20,
+            "commited" : 1476021800
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848794718
+        }
+    ],
+    "updated" : 1477914963482
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("579390ccfe26750010a7ed58"),
+    "player" : "Anders Michael Larsen",
+    "payed" : 290,
+    "fines" : [ 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : NumberLong(1470911060260)
+        }, 
+        {
+            "desc" : "Mistet matrialer",
+            "price" : 20,
+            "commited" : 1476021800
+        }, 
+        {
+            "desc" : "Forsinket",
+            "price" : 20,
+            "commited" : 1476296197995
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : 1477848014167
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848645108
+        }
+    ],
+    "updated" : 1477855764876
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5793908afe26750010a7ed52"),
+    "player" : "Kenneth Albæk Bilet Jensen",
+    "payed" : 295,
+    "fines" : [ 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : 1470911067280
+        }, 
+        {
+            "desc" : "Forsinket",
+            "price" : 20,
+            "commited" : 1475091363000
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848937582
+        }, 
+        {
+            "desc" : "Fedterøven",
+            "price" : 75,
+            "commited" : 1477849318544
+        }
+    ],
+    "updated" : 1477948295141
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("579390e4fe26750010a7ed5b"),
+    "player" : "Nicky Holm Dillinger",
+    "payed" : 330,
+    "fines" : [ 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : 1470858071452
+        }, 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : 1470911054927
+        }, 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : 1471457276880
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : 1473142198164
+        }, 
+        {
+            "desc" : "Glemt afbud",
+            "price" : 50,
+            "commited" : 1477067585328
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848672824
+        }
+    ],
+    "updated" : 1477914971715
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("579390b4fe26750010a7ed55"),
+    "player" : "Tejs lykkestrup",
+    "payed" : 285,
+    "fines" : [ 
+        {
+            "desc" : "Forsinket",
+            "price" : 20,
+            "commited" : 1470858109130
+        }, 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : 1470911063655
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : 1472725601563
+        }, 
+        {
+            "desc" : "Bøder ikke betalt til tiden pr. uge",
+            "price" : 15,
+            "commited" : 1472725754484
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848598111
+        }
+    ],
+    "updated" : 1478074837691
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5793910efe26750010a7ed61"),
+    "player" : "Mikkel Hancke Køster",
+    "payed" : 520,
+    "fines" : [ 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : NumberLong(1470246890682)
+        }, 
+        {
+            "desc" : "Forsinket",
+            "price" : 20,
+            "commited" : NumberLong(1470246898735)
+        }, 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : NumberLong(1470911047599)
+        }, 
+        {
+            "desc" : "Bøder ikke betalt til tiden pr. uge",
+            "price" : 15,
+            "commited" : NumberLong(1472725736696)
+        }, 
+        {
+            "desc" : "Glemt kamptøj pr. del",
+            "price" : 75,
+            "commited" : NumberLong(1473142292883)
+        }, 
+        {
+            "desc" : "Glemt kamptøj pr. del",
+            "price" : 75,
+            "commited" : NumberLong(1473142294190)
+        }, 
+        {
+            "desc" : "Gult",
+            "price" : 25,
+            "commited" : NumberLong(1473612185150)
+        }, 
+        {
+            "desc" : "Mistet matrialer",
+            "price" : 20,
+            "commited" : 1476021800
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : 1477224187509
+        }, 
+        {
+            "desc" : "Glemt træningstrøje",
+            "price" : 25,
+            "commited" : 1477580982401
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848813244
+        }
+    ],
+    "updated" : 1477933589640
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("57a6fccffe26750010a7ed6e"),
+    "player" : "Benjamin Daniel Krautwald",
+    "payed" : 0,
+    "fines" : [],
+    "updated" : NumberLong(1470561487280)
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5790fdeafe26750010a7ed43"),
+    "player" : "Daniel Clement Poulsen",
+    "payed" : 440,
+    "fines" : [ 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : NumberLong(1470911082888)
+        }, 
+        {
+            "desc" : "Bøder ikke betalt til tiden pr. uge",
+            "price" : 15,
+            "commited" : NumberLong(1472725700335)
+        }, 
+        {
+            "desc" : "Bøder ikke betalt til tiden pr. uge",
+            "price" : 15,
+            "commited" : NumberLong(1473437095208)
+        }, 
+        {
+            "desc" : "Glemt træningstrøje",
+            "price" : 25,
+            "commited" : NumberLong(1474529501339)
+        }, 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : NumberLong(1474529511617)
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : NumberLong(1474806196333)
+        }, 
+        {
+            "desc" : "Mistet matrialer",
+            "price" : 20,
+            "commited" : 1476021800
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : 1477848019330
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : 1477848079589
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848542800
+        }
+    ],
+    "updated" : 1478076068309
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("57938f75fe26750010a7ed46"),
+    "player" : "Malte Svanborg",
+    "payed" : 365,
+    "fines" : [ 
+        {
+            "desc" : "Glemt træningstrøje",
+            "price" : 25,
+            "commited" : NumberLong(1470858090687)
+        }, 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : NumberLong(1470911079890)
+        }, 
+        {
+            "desc" : "Forsinket",
+            "price" : 20,
+            "commited" : NumberLong(1474529577433)
+        }, 
+        {
+            "desc" : "Gult",
+            "price" : 25,
+            "commited" : NumberLong(1474806223224)
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : NumberLong(1475474702662)
+        }, 
+        {
+            "desc" : "Gult",
+            "price" : 25,
+            "commited" : NumberLong(1475929442033)
+        }, 
+        {
+            "desc" : "Mistet matrialer",
+            "price" : 20,
+            "commited" : 1476021800
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848689311
+        }
+    ],
+    "updated" : 1477933598483
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("5793919ffe26750010a7ed6a"),
+    "player" : "Mikkel Harkjær-Salmonsen",
+    "payed" : 390,
+    "fines" : [ 
+        {
+            "desc" : "Glemt træningstrøje",
+            "price" : 25,
+            "commited" : NumberLong(1470246837033)
+        }, 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : NumberLong(1470246856175)
+        }, 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : NumberLong(1470911037352)
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : NumberLong(1473142206618)
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : NumberLong(1474011383644)
+        }, 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : NumberLong(1474529542130)
+        }, 
+        {
+            "desc" : "Mistet matrialer",
+            "price" : 20,
+            "commited" : 1476021800
+        }, 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : 1477067562497
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848659843
+        }
+    ],
+    "updated" : 1477852371675
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("5790cadf2af79901c6167cb3"),
+    "player" : "Laurits Langberg",
+    "payed" : 310,
+    "fines" : [ 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : NumberLong(1470911022696)
+        }, 
+        {
+            "desc" : "Mistet matrialer",
+            "price" : 20,
+            "commited" : 1476021800
+        }, 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : 1477067569681
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848785083
+        }, 
+        {
+            "desc" : "Fedterøven",
+            "price" : 75,
+            "commited" : 1477849301310
+        }
+    ],
+    "updated" : 1477852380484
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("5793906dfe26750010a7ed4f"),
+    "player" : "Josef Hegazy",
+    "payed" : 400,
+    "fines" : [ 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : NumberLong(1470911070327)
+        }, 
+        {
+            "desc" : "Gult",
+            "price" : 25,
+            "commited" : NumberLong(1472725661444)
+        }, 
+        {
+            "desc" : "Bøder ikke betalt til tiden pr. uge",
+            "price" : 15,
+            "commited" : NumberLong(1472725723975)
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : NumberLong(1473142236502)
+        }, 
+        {
+            "desc" : "Glemt dunk (kamp)",
+            "price" : 10,
+            "commited" : NumberLong(1475929480985)
+        }, 
+        {
+            "desc" : "Mistet matrialer",
+            "price" : 20,
+            "commited" : 1476021800
+        }, 
+        {
+            "desc" : "Glemt afbud",
+            "price" : 50,
+            "commited" : 1477067591447
+        }, 
+        {
+            "desc" : "Glemt dunk (kamp)",
+            "price" : 10,
+            "commited" : 1477224146916
+        }, 
+        {
+            "desc" : "Forsinket",
+            "price" : 20,
+            "commited" : 1477581042830
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848824899
+        }
+    ],
+    "updated" : 1478019692058
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("5793901cfe26750010a7ed49"),
+    "player" : "Daniel Rommerdal Simoni",
+    "payed" : 660,
+    "fines" : [ 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : NumberLong(1470858056039)
+        }, 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : NumberLong(1470911076586)
+        }, 
+        {
+            "desc" : "Glemt dunk (kamp)",
+            "price" : 10,
+            "commited" : NumberLong(1472676446730)
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : NumberLong(1473142221649)
+        }, 
+        {
+            "desc" : "Glemt dunk (kamp)",
+            "price" : 10,
+            "commited" : NumberLong(1473611684099)
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : NumberLong(1474011344899)
+        }, 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : NumberLong(1474529551245)
+        }, 
+        {
+            "desc" : "Forsinket",
+            "price" : 20,
+            "commited" : NumberLong(1474529596033)
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : NumberLong(1475474717048)
+        }, 
+        {
+            "desc" : "Bøder ikke betalt til tiden pr. uge",
+            "price" : 15,
+            "commited" : NumberLong(1475757752834)
+        }, 
+        {
+            "desc" : "Glemt dunk (kamp)",
+            "price" : 10,
+            "commited" : NumberLong(1475929494199)
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : NumberLong(1475929499326)
+        }, 
+        {
+            "desc" : "Mistet matrialer",
+            "price" : 20,
+            "commited" : 1476021800
+        }, 
+        {
+            "desc" : "Forsinket",
+            "price" : 20,
+            "commited" : 1476296180811
+        }, 
+        {
+            "desc" : "Glemt dunk (kamp)",
+            "price" : 10,
+            "commited" : 1477224137429
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : 1477224165583
+        }, 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : 1477581000672
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : 1477848028292
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848832140
+        }
+    ],
+    "updated" : 1477941924762
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("57939051fe26750010a7ed4c"),
+    "player" : "Patrick Clement Poulsen",
+    "payed" : 1400,
+    "fines" : [ 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : NumberLong(1470246942056)
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : NumberLong(1470246944297)
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : NumberLong(1470858118917)
+        }, 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : NumberLong(1470911073509)
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : NumberLong(1471457265092)
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : NumberLong(1472725618391)
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : NumberLong(1472725631985)
+        }, 
+        {
+            "desc" : "Bøder ikke betalt til tiden pr. uge",
+            "price" : 15,
+            "commited" : NumberLong(1472725745511)
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : NumberLong(1473142213983)
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : NumberLong(1473142258824)
+        }, 
+        {
+            "desc" : "Glemt dunk (kamp)",
+            "price" : 10,
+            "commited" : NumberLong(1473142269477)
+        }, 
+        {
+            "desc" : "Bøder ikke betalt til tiden pr. uge",
+            "price" : 15,
+            "commited" : NumberLong(1473437091380)
+        }, 
+        {
+            "desc" : "Glemt dunk (kamp)",
+            "price" : 10,
+            "commited" : NumberLong(1473611713585)
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : NumberLong(1473878842974)
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : NumberLong(1474011364870)
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : NumberLong(1474011372705)
+        }, 
+        {
+            "desc" : "Glemt dunk (kamp)",
+            "price" : 10,
+            "commited" : NumberLong(1474011482484)
+        }, 
+        {
+            "desc" : "Bøder ikke betalt til tiden pr. uge",
+            "price" : 15,
+            "commited" : NumberLong(1474011589134)
+        }, 
+        {
+            "desc" : "Forsinket",
+            "price" : 20,
+            "commited" : NumberLong(1474529587749)
+        }, 
+        {
+            "desc" : "Bøder ikke betalt til tiden pr. uge",
+            "price" : 15,
+            "commited" : NumberLong(1474529640807)
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : NumberLong(1474806180910)
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : NumberLong(1474806191075)
+        }, 
+        {
+            "desc" : "Glemt dunk (kamp)",
+            "price" : 10,
+            "commited" : NumberLong(1474806211132)
+        }, 
+        {
+            "desc" : "Bøder ikke betalt til tiden pr. uge",
+            "price" : 15,
+            "commited" : NumberLong(1475142158677)
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : NumberLong(1475929455012)
+        }, 
+        {
+            "desc" : "Glemt dunk (kamp)",
+            "price" : 10,
+            "commited" : NumberLong(1475929465044)
+        }, 
+        {
+            "desc" : "Mistet matrialer",
+            "price" : 20,
+            "commited" : 1476021800
+        }, 
+        {
+            "desc" : "Glemt afbud",
+            "price" : 50,
+            "commited" : NumberLong(1476296167770)
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : 1477067551527
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : 1477224174363
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : 1477224205851
+        }, 
+        {
+            "desc" : "Glemt træningstrøje",
+            "price" : 25,
+            "commited" : 1477580946150
+        }, 
+        {
+            "desc" : "Forsinket (kamp)",
+            "price" : 50,
+            "commited" : 1477848005104
+        }, 
+        {
+            "desc" : "Glemt dunk (kamp)",
+            "price" : 10,
+            "commited" : 1477848046690
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : 1477848063088
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848556153
+        }
+    ],
+    "updated" : 1478030705611
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("57a6fce0fe26750010a7ed71"),
+    "player" : "Jesper Ørsted Helt",
+    "payed" : 540,
+    "fines" : [ 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : NumberLong(1470911029943)
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : NumberLong(1471457259232)
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : NumberLong(1472725646484)
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : NumberLong(1473142250854)
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : NumberLong(1474011354828)
+        }, 
+        {
+            "desc" : "Mistet matrialer",
+            "price" : 20,
+            "commited" : 1476021800
+        }, 
+        {
+            "desc" : "Forsinket",
+            "price" : 20,
+            "commited" : 1476296187468
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : 1477224213296
+        }, 
+        {
+            "desc" : "Rygning",
+            "price" : 50,
+            "commited" : 1477848074796
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848733550
+        }
+    ],
+    "updated" : 1478025490729
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("5800b78ffe26750010a7ed7d"),
+    "player" : "Lucas Christian Petersen",
+    "payed" : 315,
+    "fines" : [ 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : 1476442082201
+        }, 
+        {
+            "desc" : "Glemt træningstrøje",
+            "price" : 25,
+            "commited" : 1477580963675
+        }, 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : 1477581007745
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848587413
+        }, 
+        {
+            "desc" : "Fedterøven",
+            "price" : 75,
+            "commited" : 1477849308266
+        }
+    ],
+    "updated" : 1478028366834
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("5790e28afe26750010a7ed34"),
+    "player" : "Mads Carit Risom Nielsen",
+    "payed" : 415,
+    "fines" : [ 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : NumberLong(1470246970918)
+        }, 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : NumberLong(1470911086703)
+        }, 
+        {
+            "desc" : "Glemt kamptøj pr. del",
+            "price" : 75,
+            "commited" : NumberLong(1473142282118)
+        }, 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : NumberLong(1474529563030)
+        }, 
+        {
+            "desc" : "Mistet matrialer",
+            "price" : 20,
+            "commited" : 1476021800
+        }, 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : 1477581030180
+        }, 
+        {
+            "desc" : "Glemt kamptøj",
+            "price" : 75,
+            "commited" : 1477848098123
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848700476
+        }
+    ],
+    "updated" : 1478031203095
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("579390f6fe26750010a7ed5e"),
+    "player" : "Andrew Matovu",
+    "payed" : 370,
+    "fines" : [ 
+        {
+            "desc" : "Forsinket",
+            "price" : 20,
+            "commited" : NumberLong(1470246906872)
+        }, 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : NumberLong(1470246911702)
+        }, 
+        {
+            "desc" : "Glemt træningstrøje",
+            "price" : 25,
+            "commited" : NumberLong(1470246917725)
+        }, 
+        {
+            "desc" : "Glemt skinner",
+            "price" : 15,
+            "commited" : NumberLong(1470858065191)
+        }, 
+        {
+            "desc" : "Abonnement",
+            "price" : 100,
+            "commited" : NumberLong(1470911051565)
+        }, 
+        {
+            "desc" : "Bøder ikke betalt til tiden pr. uge",
+            "price" : 15,
+            "commited" : NumberLong(1472725674824)
+        }, 
+        {
+            "desc" : "Bøder ikke betalt til tiden pr. uge",
+            "price" : 15,
+            "commited" : NumberLong(1473437087407)
+        }, 
+        {
+            "desc" : "Glemt dunk (kamp)",
+            "price" : 10,
+            "commited" : NumberLong(1473611709134)
+        }, 
+        {
+            "desc" : "Bøder ikke betalt til tiden pr. uge",
+            "price" : 15,
+            "commited" : NumberLong(1474011584581)
+        }, 
+        {
+            "desc" : "Bøder ikke betalt til tiden pr. uge",
+            "price" : 15,
+            "commited" : NumberLong(1474529636220)
+        }, 
+        {
+            "desc" : "Bøder ikke betalt til tiden pr. uge",
+            "price" : 15,
+            "commited" : NumberLong(1475142154573)
+        }, 
+        {
+            "desc" : "Glemt dunk (kamp)",
+            "price" : 10,
+            "commited" : 1477848040844
+        }, 
+        {
+            "desc" : "Afslutningsfest",
+            "price" : 100,
+            "commited" : 1477848719015
+        }
+    ],
+    "updated" : 1477934101311
+}

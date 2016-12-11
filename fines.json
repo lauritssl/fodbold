@@ -1,0 +1,111 @@
+/* 1 */
+{
+    "_id" : ObjectId("578fd5a7a300688604bd1905"),
+    "desc" : "Glemt afbud",
+    "price" : 50
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("578fd5a7a300688604bd1906"),
+    "desc" : "Glemt træningstrøje",
+    "price" : 25
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("578fd5a7a300688604bd1907"),
+    "desc" : "Rygning",
+    "price" : 50
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("578fd5a7a300688604bd1908"),
+    "desc" : "Forsinket",
+    "price" : 20
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("578fd5a7a300688604bd1909"),
+    "desc" : "Glemt afbud (kamp)",
+    "price" : 100
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("578fd5a7a300688604bd190a"),
+    "desc" : "Udblivelse (kamp)",
+    "price" : 200
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("578fd5a7a300688604bd190b"),
+    "desc" : "Forsinket (kamp)",
+    "price" : 50
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("578fd5a7a300688604bd190c"),
+    "desc" : "Glemt kamptøj",
+    "price" : 75
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("578fd5a7a300688604bd190d"),
+    "desc" : "Gult",
+    "price" : 25
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("578fd5a7a300688604bd190e"),
+    "desc" : "Rødt",
+    "price" : 75
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("57a05fa8fe26750010a7ed6c"),
+    "desc" : "Glemt skinner",
+    "price" : 15
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("57ab888efe26750010a7ed73"),
+    "desc" : "Glemt dunk (kamp)",
+    "price" : 10
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("57ac520bfe26750010a7ed74"),
+    "desc" : "Abonnement",
+    "price" : 100
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("57c56c6cfe26750010a7ed75"),
+    "desc" : "Bøder ikke betalt til tiden pr. uge",
+    "price" : 15
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("58162db5275292fe0b951021"),
+    "desc" : "Afslutningsfest",
+    "price" : 100
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("58162ffbfe26750010a7ed7f"),
+    "desc" : "Fedterøven",
+    "price" : 75
+}

@@ -1,0 +1,239 @@
+/* 1 */
+{
+    "_id" : ObjectId("5790cadf2af79901c6167cb4"),
+    "name" : "Laurits Langberg",
+    "games" : 8,
+    "goals" : 4,
+    "assists" : 1,
+    "yellows" : 0,
+    "reds" : 0,
+    "updated" : 1477910917648
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5790e1a3fe26750010a7ed2f"),
+    "name" : "Marcus Mario Kurszewska",
+    "games" : 9,
+    "goals" : 5,
+    "assists" : 2,
+    "yellows" : 1,
+    "reds" : 0,
+    "updated" : 1477910927803
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5790e28afe26750010a7ed35"),
+    "name" : "Mads Carit Risom Nielsen",
+    "games" : 9,
+    "goals" : 12,
+    "assists" : 9,
+    "yellows" : 0,
+    "reds" : 0,
+    "updated" : 1477911002385
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5790fdeafe26750010a7ed44"),
+    "name" : "Daniel Clement Poulsen",
+    "games" : 6,
+    "goals" : 0,
+    "assists" : 0,
+    "yellows" : 0,
+    "reds" : 0,
+    "updated" : 1477911010026
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("57938f75fe26750010a7ed47"),
+    "name" : "Malte Svanborg",
+    "games" : 7,
+    "goals" : 5,
+    "assists" : 4,
+    "yellows" : 2,
+    "reds" : 0,
+    "updated" : 1476006823168
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5793901cfe26750010a7ed4a"),
+    "name" : "Daniel Rommerdal Simoni",
+    "games" : 9,
+    "goals" : 0,
+    "assists" : 1,
+    "yellows" : 0,
+    "reds" : 0,
+    "updated" : 1477911023777
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("57939051fe26750010a7ed4d"),
+    "name" : "Patrick Clement Poulsen",
+    "games" : 9,
+    "goals" : 2,
+    "assists" : 3,
+    "yellows" : 0,
+    "reds" : 0,
+    "updated" : 1477911031192
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5793906dfe26750010a7ed50"),
+    "name" : "Josef Hegazy",
+    "games" : 6,
+    "goals" : 1,
+    "assists" : 0,
+    "yellows" : 1,
+    "reds" : 0,
+    "updated" : 1477230162877
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5793908afe26750010a7ed53"),
+    "name" : "Kenneth Albæk Bilet Jensen",
+    "games" : 1,
+    "goals" : 0,
+    "assists" : 0,
+    "yellows" : 0,
+    "reds" : 0,
+    "updated" : 1473983177245
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("579390b4fe26750010a7ed56"),
+    "name" : "Tejs lykkestrup",
+    "games" : 2,
+    "goals" : 0,
+    "assists" : 0,
+    "yellows" : 0,
+    "reds" : 0,
+    "updated" : 1476006642976
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("579390ccfe26750010a7ed59"),
+    "name" : "Anders Michael Larsen",
+    "games" : 8,
+    "goals" : 0,
+    "assists" : 0,
+    "yellows" : 0,
+    "reds" : 0,
+    "updated" : 1477911041586
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("579390e4fe26750010a7ed5c"),
+    "name" : "Nicky Holm Dillinger",
+    "games" : 4,
+    "goals" : 0,
+    "assists" : 0,
+    "yellows" : 0,
+    "reds" : 0,
+    "updated" : 1477911051034
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("579390f6fe26750010a7ed5f"),
+    "name" : "Andrew Matovu",
+    "games" : 8,
+    "goals" : 3,
+    "assists" : 3,
+    "yellows" : 0,
+    "reds" : 0,
+    "updated" : 1477911059166
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("5793910efe26750010a7ed62"),
+    "name" : "Mikkel Hancke Køster",
+    "games" : 8,
+    "goals" : 1,
+    "assists" : 1,
+    "yellows" : 1,
+    "reds" : 0,
+    "updated" : 1477911077756
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("5793917bfe26750010a7ed68"),
+    "name" : "Kasper Dornonville Jørgensen",
+    "games" : 4,
+    "goals" : 0,
+    "assists" : 2,
+    "yellows" : 0,
+    "reds" : 0,
+    "updated" : 1477911089754
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("5793919ffe26750010a7ed6b"),
+    "name" : "Mikkel Harkjær-Salmonsen",
+    "games" : 7,
+    "goals" : 0,
+    "assists" : 0,
+    "yellows" : 0,
+    "reds" : 0,
+    "updated" : 1477918660347
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("57a6fccffe26750010a7ed6f"),
+    "name" : "Benjamin Daniel Krautwald",
+    "games" : 2,
+    "goals" : 0,
+    "assists" : 0,
+    "yellows" : 0,
+    "reds" : 0,
+    "updated" : 1473983250317
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("57a6fce0fe26750010a7ed72"),
+    "name" : "Jesper Ørsted Helt",
+    "games" : 7,
+    "goals" : 10,
+    "assists" : 6,
+    "yellows" : 0,
+    "reds" : 0,
+    "updated" : 1477230242577
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("57f78a3afe26750010a7ed7b"),
+    "name" : "Safa Omar",
+    "games" : 0,
+    "goals" : 0,
+    "assists" : 0,
+    "yellows" : 0,
+    "reds" : 0,
+    "updated" : 1475840570724
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("5800b78ffe26750010a7ed7e"),
+    "name" : "Lucas Christian Petersen",
+    "games" : 2,
+    "goals" : 1,
+    "assists" : 0,
+    "yellows" : 0,
+    "reds" : 0,
+    "updated" : 1477911119361
+}
